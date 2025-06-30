@@ -23,9 +23,10 @@
 
 ## steps
 # Update the system and install Wireshark
-sudo apt update
 
-sudo apt install wireshark -y
+`sudo apt update`
+
+`sudo apt install wireshark -y`
 
 # Launch Wireshark
 
@@ -36,18 +37,18 @@ sudo apt install wireshark -y
 ![image alt](https://github.com/devalla-jwala/Task-5-Capture-and-Analyze-Network-Traffic-Using-Wireshark.Elevate-Labs/blob/8a4dce4bfeb317c1d14f6d1b2ab9b7245c7ee32d/2.png)
 
 # Send ICMP packets (ping)
-ping -c 4 google.com
+`ping -c 4 google.com`
 
 ![image alt](https://github.com/devalla-jwala/Task-5-Capture-and-Analyze-Network-Traffic-Using-Wireshark.Elevate-Labs/blob/8a4dce4bfeb317c1d14f6d1b2ab9b7245c7ee32d/.Filter%20captured%20packets%20by%20protocol.png)
 
 # Perform a DNS lookup
-dig facebook.com
+`dig facebook.com`
 
 # Generate HTTP (non-secure) request
-curl http://neverssl.com
+`curl http://neverssl.com`
 
 # Generate HTTPS (TLS encrypted) request
-curl https://wikipedia.org
+`curl https://wikipedia.org`
 
 ![image alt](https://github.com/devalla-jwala/Task-5-Capture-and-Analyze-Network-Traffic-Using-Wireshark.Elevate-Labs/blob/8a4dce4bfeb317c1d14f6d1b2ab9b7245c7ee32d/3.png)
 
