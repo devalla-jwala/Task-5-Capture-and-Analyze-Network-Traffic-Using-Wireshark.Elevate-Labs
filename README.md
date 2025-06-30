@@ -24,6 +24,7 @@
 ## steps
 # Update the system and install Wireshark
 sudo apt update
+
 sudo apt install wireshark -y
 
 # Launch Wireshark
@@ -32,19 +33,30 @@ sudo apt install wireshark -y
 # - Select interface (eth0 or wlan0)
 # - Click the blue shark fin icon to start capture
 
+![image alt](https://github.com/devalla-jwala/Task-5-Capture-and-Analyze-Network-Traffic-Using-Wireshark.Elevate-Labs/blob/8a4dce4bfeb317c1d14f6d1b2ab9b7245c7ee32d/2.png)
 
 # Send ICMP packets (ping)
 ping -c 4 google.com
 
+![image alt](https://github.com/devalla-jwala/Task-5-Capture-and-Analyze-Network-Traffic-Using-Wireshark.Elevate-Labs/blob/8a4dce4bfeb317c1d14f6d1b2ab9b7245c7ee32d/.Filter%20captured%20packets%20by%20protocol.png)
 
-![Packet Capture](screenshots/capture_screenshot.png)
+# Perform a DNS lookup
+dig facebook.com
+
+# Generate HTTP (non-secure) request
+curl http://neverssl.com
+
+# Generate HTTPS (TLS encrypted) request
+curl https://wikipedia.org
+
+![image alt](https://github.com/devalla-jwala/Task-5-Capture-and-Analyze-Network-Traffic-Using-Wireshark.Elevate-Labs/blob/8a4dce4bfeb317c1d14f6d1b2ab9b7245c7ee32d/3.png)
 
 > Capturing packets from interface `eth0`, filtered by protocol (TCP, TLS, UDP, ICMPv6, ARP).
 
 # After 30–60 seconds, stop capture in Wireshark (red square button)
 
 # Save the capture:
-# File > Save As > wireshark_jwala.pcapng
+# File > Save As > wireshark_task5_jwala.pcapng
 ---
 
 ## 🎯 Protocols Identified
@@ -88,7 +100,3 @@ ping -c 4 google.com
 - [Packet Analysis Techniques](https://wiki.wireshark.org/PacketAnalysis)
 
 ---
-
-> 🔐 **Author:** Devalla Jwala  
-> 🕓 **Date:** June 2025  
-> 📁 **Platform:** Kali Linux (eth0 interface)
